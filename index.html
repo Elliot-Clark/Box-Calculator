@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Crate & Barrel Box Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+    </head>
+  
+<body>
+  <p class="calculator">
+    <h1>Crate&Barrel Box Calculator</h1>
+  
+    <div class="inputselectors">
+      <button onClick="toggleInput()">Toggle Single Input / Triple Input</button>  
+    </div>
+    <div class="inputArea">
+      <div class="singleField">
+        <p>Measure and enter a 6-digit number for the the <b>Length</b>, <b>Width</b>, and <b>Height</b> items. 
+        </br>Example: 091206 for: 9 x 12 x 6 inches. 
+        </br>Hit enter to run. Hit Numpad "." to clear and reset.</br>
+        <input class="singleInput" type="number" oninput="init()">
+      </div>
+
+      <div class="tripleField">
+        <p>Measure and enter the <b>Length</b>, <b>Width</b>, and <b>Height</b> of your items below in inches:</p>
+        <div class="inputFields">
+          <input class="tripleInput" type="number" name="Length" placeholder="Length"> x
+          <input class="tripleInput" type="number" name="Width" placeholder="Width"> x
+          <input class="tripleInput" type="number" name="Height" placeholder="Height">
+        </div>
+      </div>
+
+      <p class="padding">Account for at most: <input class="input" type="number" value="0" id="pad"> inch(es) of padding.</p>
+    </div>
+      
+      <button class="calc" onClick="init()">Find me the best Box!</button>
+      
+      <div class="answer"></div>
+      
+      <table>
+      <th>Box Size</th><th>Length</th><th>Width</th><th>Height</th>
+      <tr id="2"><td>2</td><td>15</td><td>11</td><td>2</td></tr>
+      <tr id="3"><td>3</td><td>10</td><td>6</td><td>4</td></tr>
+      <tr id="4"><td>4</td><td>18</td><td>4</td><td>4</td></tr>
+      <tr id="5"><td>5</td><td>13</td><td>13</td><td>7</td></tr>
+      <tr id="6"><td>6</td><td>10</td><td>9</td><td>7</td></tr>
+      <tr id="8"><td>8</td><td>24</td><td>19</td><td>4</td></tr>
+      <tr id="9"><td>9</td><td>12</td><td>12</td><td>11</td></tr>
+      <tr id="10"><td>10</td><td>20</td><td>20</td><td>12</td></tr>
+      <tr id="11"><td>11</td><td>16</td><td>16</td><td>4</td></tr>  
+      <tr id="12"><td>12</td><td>20</td><td>10</td><td>7</td></tr>
+      <tr id="14"><td>14</td><td>15</td><td>15</td><td>15</td></tr>
+      <tr id="15"><td>15</td><td>23</td><td>15</td><td>8</td></tr>
+      <tr id="16"><td>16</td><td>20</td><td>14</td><td>3</td></tr>
+      <tr id="17"><td>17</td><td>17</td><td>17</td><td>7</td></tr>
+      <tr id="31"><td>31</td><td>31</td><td>12</td><td>8</td></tr>
+      <tr id="34"><td>34</td><td>22</td><td>16</td><td>14</td></tr>
+      <tr id="37"><td>37</td><td>28</td><td>20</td><td>8</td></tr>
+      </table>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

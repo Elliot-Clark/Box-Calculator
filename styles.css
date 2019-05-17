@@ -1,0 +1,75 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, sans-serif;
+  }
+  
+  body {
+    margin: 75px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 64px;
+  }
+  
+  .inputselectors {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+  }
+  
+  .inputArea {
+    border-color: #000;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 12px;
+  }
+  
+  .singleField {
+    display: none;
+  }
+  
+  .tripleField {
+    display: block;
+  }
+  
+  .singleInput {
+    margin-top: 10px;
+  }
+  
+  .calculator p {
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .padding input {
+    width: 40px;
+  }
+  
+  .calc {
+    display: block;
+    margin: 0 auto;
+    cursor:pointer;
+    border-radius: 2px;
+    position: relative;
+    top: 20px;
+  }
+  
+  .answer {
+    font-size: 44px;
+    padding-top: 40px;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  table {
+    font-size: 1.3em;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: 6vh;
+    margin: 0 auto;
+  }
