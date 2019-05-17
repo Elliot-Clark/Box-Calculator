@@ -1,5 +1,6 @@
 let activeStyle = document.getElementsByClassName("tripleField")[0];
 
+
 function toggleInput() {
     if (activeStyle.style.display === "none") {
       document.getElementsByClassName("tripleField")[0].style.display = "block";
