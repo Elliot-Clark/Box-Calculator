@@ -1,20 +1,19 @@
-let activeStyle = document.getElementsByClassName("tripleField")[0];
-
-
+const tripleStyle = document.getElementsByClassName("tripleField")[0];
+const singleStyle = document.getElementsByClassName("singleField")[0];
 function toggleInput() {
-    if (activeStyle.style.display === "none") {
-      document.getElementsByClassName("tripleField")[0].style.display = "block";
-      document.getElementsByClassName("singleField")[0].style.display = "none";
+    if (tripleStyle.style.display === "none") {
+      tripleStyle.style.display = "block";
+      singleStyle.style.display = "none";
     } else {
-      document.getElementsByClassName("singleField")[0].style.display = "block";
-      document.getElementsByClassName("tripleField")[0].style.display = "none";
+      singleStyle.style.display = "block";
+      tripleStyle.style.display = "none";
     }
 }
 
-let doc = document.getElementsByTagName("input");
+const doc = document.getElementsByTagName("input");
 for (let w = 0; w < doc.length; w++) {
   doc[w].addEventListener("keyup", function(event) {
-      event.preventDefault();
+    event.preventDefault();
       if (event.keyCode === 13) {
           init();
       } if (event.keyCode === 110) {
@@ -23,7 +22,7 @@ for (let w = 0; w < doc.length; w++) {
           document.getElementsByClassName("answer")[0].innerHTML = "";
           reset();
         }
-      }                                                         
+      }                                                           
   });
 }
 
@@ -31,7 +30,7 @@ function init() {
   reset();
   let dimensions = [];
   let extra = parseFloat(document.getElementById('pad').value);
-  if (activeStyle.style.display !== "none") {
+  if (tripleStyle.style.display !== "none") {
     let inputs = document.getElementsByClassName("tripleInput");
     let measurements  = [].map.call(inputs, function(input) {
       dimensions.push(parseFloat(input.value) + extra);
@@ -51,7 +50,6 @@ function init() {
 }
 
 function compare(dimensions) {
-  console.log(dimensions);
   let answer = [];
   for (i = 0; i < Boxes.length; i++) {
     let remainder = 0;
@@ -64,7 +62,7 @@ function compare(dimensions) {
         break;
       }
     }
-    if (remainder) {
+    if (remainder || remainder === 0) {
       let temp = [];
       temp.push(Boxes[i][0]);
       temp.push(remainder);

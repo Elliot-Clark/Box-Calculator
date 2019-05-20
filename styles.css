@@ -7,10 +7,11 @@ html {
   body {
     margin: 75px;
     text-align: center;
+    font-size: 2rem;
   }
   
   h1 {
-    font-size: 64px;
+    font-size: 72px;
   }
   
   .inputselectors {
@@ -19,9 +20,13 @@ html {
     padding-bottom: 30px;
   }
   
+  button {
+    font-size: 1.5rem;
+  }
+
   .inputArea {
     border-color: #000;
-    border-width: 5px;
+    border-width: 2px;
     border-style: solid;
     border-radius: 12px;
   }
@@ -36,6 +41,20 @@ html {
   
   .singleInput {
     margin-top: 10px;
+    width: 50%;
+    max-width: 200px;
+  }
+
+  .tripleInput {
+    width: 20%;
+    max-width: 200px;
+    min-width: 100px;
+  }
+
+  input {
+    width: 10%;
+    height: 30px;
+    font-size: 30px;
   }
   
   .calculator p {
@@ -48,16 +67,13 @@ html {
   }
   
   .calc {
-    display: block;
-    margin: 0 auto;
-    cursor:pointer;
+    cursor: pointer;
     border-radius: 2px;
-    position: relative;
-    top: 20px;
+    margin-top: 40px;
   }
   
   .answer {
-    font-size: 44px;
+    font-size: 164px;
     padding-top: 40px;
   }
   
