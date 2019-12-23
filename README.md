@@ -1,14 +1,13 @@
 # Crate & Barrel Box Calculator
 
 
-The Crate and Barrel Box Calculator is an unofficial tool I created for stockware associates at Crate & Barrel to quickly and easily find the most suitable and efficient box for packaging merchandise. Finding, not only a box that fits a collection of items, but also one that leaves the least amount of remaining space. It has been used daily at my workplace and also serves as the first time my knowledge in coding has helped myself and others in my professional career, however small.
+The Crate and Barrel Box Calculator is an unofficial tool I created for stockware associates at Crate & Barrel to quickly and easily find the most suitable and efficient box size for packaging merchandise. Finding, not only a box that fits a collection of items, but also one that leaves the least amount of remaining space. It has been used daily at my workplace and also serves as the first time my knowledge in coding has helped myself and others in my professional career, however small.
 
 
 ## How to Use
 
 This program is made using simple HTML, CSS, and Javascript. Download those files and run the HTML page, or alternatively, you can simply visit my CodePen page for this project and use it there.
 [CodePen Link](https://codepen.io/Everyone/full/rqgevR)
-
 
 ###### Triple Input
 To use this program, measure out the **height**, **width**, and **length** in inches of your items and input the measurement into their respective boxes. The actual order of height, width, and length doesn't matter. Enter any space for padding, if necessary, and hit "Find me the best Box". The most efficient box number will appear below and the table below that will also adjust to show other alternative box numbers that could fit the entered measurements.
